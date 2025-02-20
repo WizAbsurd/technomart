@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Техномарт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+    <body>
+      <header class="main-header">
+        <div class="header-container">
+          <a class="main-header-logo"><img src="" /></a>
+          <ul class="search-navigation">
+            <li><a class="search-link" href="#">Поиск:</a></li>
+            <li><a class="bookmark-link" href="#">Закладки: 0</a></li>
+            <li><a class="basket-link" href="#">Корзина: 10</a></li>
+            <li><a class="order-link" href="#">Оформить заказ</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="description">
+              <p>
+                Интернет-магазин<br />
+                строительных материалов<br />
+                и&nbsp;инструментов для ремонта
+              </p>
+            </li>
+            <li class="phone">
+              <a class="button" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </li>
+            <li class="address">
+              <p>г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
+            </li>
+          </ul>
+          <ul class="user-navigation">
+            <a class="button" href="/login.html">Равшан Джамшутович</a>
+            <li><a class="basket-link" href="#">Мои заказы</a></li>
+            <li><a class="login-link" href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="/home.html">Главная</a></li>
+            <li><a href="/company.html">Компания</a></li>
+            <li><a href="/catalog.html">Каталог</a></li>
+            <li><a href="/news.html">Новости</a></li>
+            <li><a href="/special-offers.html">Спецпредложения</a></li>
+            <li><a href="/delivery.html">Доставка</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="container">
+
+        <div class="inner-page">
+            <ul class="breadcrumbs">
+                <li><a href="/catalog.html">каталог</a></li>
+                <li><a href="/tool.html">инструмент</a></li>
+                <li><a href="/catalog.html">перфораторы</li>
+            </ul>
+        </div>
+
+        <h2 class="page-title">ПЕРФОРАТОРЫ</h2>
+        
+        <div class="catalog-columns">
+            
+            <section class="filters">
+                <h2 class="visually-hidden">фильтр товаров</h2>
+                <form class="filter" method="get" action="/https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>производители:</legend>
+                        <ui>
+                            <li class="filter-option">
+                              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                              <label for="filter-bosch">BOSCH</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                                <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                            </li>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                                <label for="filter-makita">MAKITA</label>
+                            </li>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                                <label for="filter-dewalt">DEWALT</label>
+                            </li>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                                <label for="filter-hitachi">HITACHI</label>
+                            </li>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>питание:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-grope" value="rechargeable" id="filter-rechargeable">
+                                <label for="filter-rechargeable">АККУМУЛЯТОРНЫЕ</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-grope" value="chain" id="filter-chain">
+                                <label for="filter-chain">СЕТЕВЫЕ</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button button">показать</button>
+                </form>
+            </section>
+    
+            <section class="catalog">
+                <ul class="catalog-items">
+                    <div class="catalog-item">
+                        <div class="flag flag-new">новинка</div>
+                        <div class="actions">
+                            <a href="#" class="buy">Купить</a>
+                            <a href="#" class="bookmark-link">В закладки</a>
+                        </div>
+                        <div class="catalog-item-image"><img src=""></div>
+                        <div class="title">Перфоратор BOSCH BFG 3000</div>
+                        <div class="discount">22&nbsp;500&nbsp;Р.</div>
+                        <div class="price">15&nbsp;500&nbsp;Р.</div>
+                    </div>
+                </ul>
+                <ul class="pagination-list">
+                    <li class="pagination-item"><a href="#">1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">следующая</a></li>
+                </ul>
+            </section>
+        </div>
+        <section class="drill-info">
+            <h2 class="drill-title">пара слов о&nbsp;первораторах</h2>
+            <p class="drill-text">
+                Перфоратор&nbsp;&mdash; универсальный строительный инструмент. Предназначен для сверления и&nbsp;дробления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне. Существуют электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповёрта и&nbsp;отбойного молотка. В&nbsp;ассортиментном ряду есть выбор &laquo;трёхрежимников&raquo;: в&nbsp;одном устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.</p>
+        </section>
+        
+        <footer class="main-footer">
+            <div class="container">
+              <a class="main-header-logo"><img src="" /></a>
+              <p class="footer-contacts">
+                г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8<br />
+                +7(812)555-05-55
+              </p>
+              <ul class="footer-services">
+                <li><a href="/company.html">Компания</a></li>
+                <li><a href="/news.html">Новости</a></li>
+                <li><a href="/catalog.html">Каталог</a></li>
+                <li><a href="/delivery.html">Доставка</a></li>
+                <li><a href="/contacts.html">Контакты</a></li>
+                <li><a href="/materials.html">Материалы</a></li>
+                <li><a href="/technique.html">Техника</a></li>
+                <li><a href="/tool.html">Инструмент</a></li>
+                <li><a href="/special-offers.html">Спецпредложения</a></li>
+              </ul>
+            </div>
+            <b
+              >&copy;&nbsp;2010-2025 Компания&quot;Техномарт&quot;<br />
+              Все права защищены</b
+            >
+            <ul class="social">
+              <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+            <p class="footer-copyright">
+              <b>Обратная связь:</b>
+              <a class="button" href="mailto:mail@htmlacademy.ru"
+                >mail@htmlacademy.ru</a
+              >
+              <b>Разработано -</b>
+              <a class="button" href="https://htmlacademy.ru"
+                >@htmlacademy.ru и&nbsp;Димон</a
+              >
+            </p>
+          </footer>
+      </main>
+    </body>
+</html>
