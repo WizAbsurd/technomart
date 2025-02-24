@@ -24,7 +24,7 @@
           <li><a class="link search" href="#">Поиск:</a></li>
           <li><a class="link bookmark" href="#">Закладки: 0</a></li>
           <li><a class="link basket" href="#">Корзина: 0</a></li>
-          <li><a class="link order" href="#">Оформить заказ</a></li>
+          <li><a class="button order" href="#">Оформить заказ</a></li>
         </ul>
       </div>
       <div class="user-navigation">
@@ -50,13 +50,15 @@
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="/index.html">Главная</a></li>
-          <li><a href="/company.html">Компания</a></li>
-          <li><a href="/catalog.html">Каталог</a></li>
-          <li><a href="/news.html">Новости</a></li>
-          <li><a href="/special-offers.html">Спецпредложения</a></li>
-          <li><a href="/delivery.html">Доставка</a></li>
-          <li><a href="/contacts.html">Контакты</a></li>
+          <li><a class="link" href="/index.html">Главная</a></li>
+          <li><a class="link" href="/company.html">Компания</a></li>
+          <li><a class="link" href="/catalog.html">Каталог</a></li>
+          <li><a class="link" href="/news.html">Новости</a></li>
+          <li>
+            <a class="link" href="/special-offers.html">Спецпредложения</a>
+          </li>
+          <li><a class="link" href="/delivery.html">Доставка</a></li>
+          <li><a class="link" href="/contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -68,109 +70,114 @@
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="features-list">
           <li class="feature-item materials">
-            <h3 class="feature-title">Материалы</h3>
-            <a class="feature-button" href="/materials.html"
+            <h3 class="materials title">Материалы</h3>
+            <a class="materials button" href="/materials.html"
               >на&nbsp;любой вкус</a
             >
+            <a class="materials image"></a>
           </li>
           <li class="feature-item tool">
-            <h3 class="feature-title">Инструмент</h3>
-            <a class="feature-button" href="/tool.html">на&nbsp;все случаи</a>
+            <h3 class="tool title">Инструмент</h3>
+            <a class="tool button" href="/tool.html">на&nbsp;все случаи</a>
+            <a class="tool image"></a>
           </li>
           <li class="feature-item technique">
-            <h3 class="feature-title">Техника</h3>
-            <a class="feature-button" href="/technique.html">для стройки</a>
+            <h3 class="technique title">Техника</h3>
+            <a class="technique button" href="/technique.html">для стройки</a>
+            <a class="technique image"></a>
           </li>
           <li class="feature-item drill">
-            <h3 class="drills">ДРЕЛИ</h3>
-            <a class="drill button" href="/catalog.html"
-              >Соседям на&nbsp;радость!</a
-            >
-            <a class="drill-button" href="/catalog.html">открыть каталог</a>
+            <div class="drill-container">
+              <a class="drill-button" href="/drill.html">
+                <h3 class="drill-title">ДРЕЛИ</h3>
+                <p class="drill-text">Соседям на&nbsp;радость!</p>
+              </a>
+            </div>
+            <a class="drill button" href="/catalog.html">открыть каталог</a>
           </li>
           <li class="feature-item special-offers">
-            <h3 class="feature-title">Скидки&nbsp;50%</h3>
-            <a class="feature-button" href="/special-offers.html"
+            <h3 class="special-offers title">Скидки&nbsp;50%</h3>
+            <a class="special-offers button" href="/special-offers.html"
               >на&nbsp;350 товаров</a
             >
+            <a class="special-offers image"></a>
           </li>
           <li class="feature-item delivery">
-            <h3 class="feature-title">Доставка</h3>
-            <a class="feature-button" href="/delivery.html">БЕСПЛАТНО</a>
+            <h3 class="delivery title">Доставка</h3>
+            <a class="delivery button" href="/delivery.html">БЕСПЛАТНО</a>
+            <a class="delivery image"></a>
           </li>
         </ul>
       </section>
 
-      <section class="catalog-pop">
-        <div class="catalog-pop offers">
-          <h2 class="catalog-title">популярные товары:</h2>
-          <a class="offers-button" href="/catalog.html"
-            >все популярные товары</a
-          >
+      <section class="popular">
+        <div class="popular-head">
+          <h2 class="head-title">популярные товары:</h2>
+          <a class="head button" href="/catalog.html">все популярные товары</a>
         </div>
-        <ul class="catalog-list offers">
-          <li class="catalog-item">
-            <a class="catalog-item-image" href="/catalog.html">
+        <ul class="popular-list">
+          <li class="popular-item 9000">
+            <a class="9000-image" href="/catalog.html">
               <img src="" />
             </a>
             <h3>
-              <a class="catalog-item-title" href="/catalog.html"
+              <a class="popular-item title" href="/catalog.html"
                 >Перфоратор BOSCH BFG 9000</a
               >
             </h3>
-            <p class="catalog-item-price">
-              <b class="discount">32&nbsp;500&nbsp;Р.</b>
-              <a class="button-price" href="#">25&nbsp;500&nbsp;Р.</a>
+            <p class="popular-price">
+              <b class="popular-discount">32&nbsp;500&nbsp;Р.</b>
+              <a class="popular-price botton" href="#">25&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-item-image" href="/catalog.html">
+          <li class="popular-item 3000">
+            <a class="3000-image" href="/catalog.html">
               <img src="" />
             </a>
             <h3>
-              <a class="catalog-item-title" href="/catalog.html"
+              <a class="popular-item title" href="/catalog.html"
                 >Перфоратор BOSCH BFG 3000</a
               >
             </h3>
-            <p class="catalog-item-price">
-              <b class="discount">22&nbsp;500&nbsp;Р.</b>
-              <a class="button-price" href="#">15&nbsp;500&nbsp;Р.</a>
+            <p class="popular-price">
+              <b class="popular-discount">22&nbsp;500&nbsp;Р.</b>
+              <a class="popular-price button" href="#">15&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-item-image" href="/catalog.html">
+          <li class="popular-item 6000">
+            <a class="6000-image" href="/catalog.html">
               <img src="" />
             </a>
             <h3>
-              <a class="catalog-item-title" href="/catalog.html"
+              <a class="popular-item title" href="/catalog.html"
                 >Перфоратор BOSCH BFG 6000</a
               >
             </h3>
-            <p class="catalog-item-price">
-              <b class="discount">30&nbsp;500&nbsp;Р.</b>
-              <a class="button-price" href="#">25&nbsp;500&nbsp;Р.</a>
+            <p class="popular-price">
+              <b class="popular-discount">30&nbsp;500&nbsp;Р.</b>
+              <a class="popular-price button" href="#">25&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="catalog-item">
-            <a class="catalog-item-image" href="/catalog.html">
+          <li class="popular-item 2000">
+            <a class="2000-image" href="/catalog.html">
               <img src="" />
             </a>
             <h3>
-              <a class="catalog-item-title" href="/catalog.html"
+              <a class="popular-item title" href="/catalog.html"
                 >Перфоратор BOSCH BFG 2000</a
               >
             </h3>
-            <p class="catalog-item-price">
-              <a class="button-price" href="#">12&nbsp;500&nbsp;Р.</a>
+            <p class="popular-price">
+              <a class="popular-price button" href="#">12&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
         </ul>
       </section>
 
-      <section class="catalog-pop">
-        <div class="catalog-pop offers">
-          <h2 class="catalog-title">популярные производители:</h2>
-          <a class="offers-button" href="/catalog.html"
+      <section class="popular">
+        <div class="popular-head">
+          <h2 class="head-title">популярные производители:</h2>
+          <a class="head button" href="/catalog.html"
             >все популярные производители:</a
           >
         </div>
