@@ -19,54 +19,69 @@
   <body>
     <header class="main-header">
       <div class="header-container">
-        <a class="main-header logo"><img src="" /></a>
+        <a class="header-logo"><img src="" /></a>
         <ul class="search-navigation">
-          <li><a class="link search" href="#">Поиск:</a></li>
-          <li><a class="link bookmark" href="#">Закладки: 0</a></li>
-          <li><a class="link basket" href="#">Корзина: 0</a></li>
-          <li><a class="link order" href="#">Оформить заказ</a></li>
+          <li><a class="link nav-search" href="#">Поиск:</a></li>
+          <li><a class="link nav-bookmark" href="#">Закладки: 0</a></li>
+          <li><a class="link nav-basket" href="#">Корзина: 10</a></li>
+          <li><a class="link nav-order" href="#">Оформить заказ</a></li>
         </ul>
       </div>
-      <div class="user-navigation">
-        <p class="user-text">
+      <div class="user-navigation-container">
+        <p class="user-navigation-text">
           Интернет-магазин<br />
           строительных материалов<br />
           и&nbsp;инструментов для ремонта
         </p>
-        <ul class="user-navigation contacts">
-          <li class="phone">
-            <a class="button" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <ul class="user-navigation-contacts">
+          <li class="user-navigation-phone">
+            <a class="user-navigation-button" href="tel:+78125550555"
+              >+7 (812) 555-05-55</a
+            >
           </li>
-          <li class="adress">
+          <li class="user-navigation-adress">
             <p>г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8</p>
           </li>
         </ul>
-        <ul class="user-navigation user">
-          <li><a class="link login" href="/login.html">Вход</a></li>
+        <ul class="user-navigation">
+          <li><a class="link nav-account" href="#">Равшан Джамшутович</a></li>
           <li>
-            <a class="link registration" href="/registration">Регистрация</a>
+            <a class="link nav-user-offers" href="#">Мои заказы</a>
+          </li>
+          <li>
+            <a class="link nav-personal-account" href="#">Личный кабинет</a>
           </li>
         </ul>
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a class="link home" href="/index.html">Главная</a></li>
-          <li><a class="link company" href="/company.html">Компания</a></li>
-          <li><a class="link catalog" href="/catalog.html">Каталог</a></li>
-          <li><a class="link news" href="/news.html">Новости</a></li>
-          <li><a class="link special-offers" href="/special-offers.html">Спецпредложения</a></li>
-          <li><a class="link delivery href="/delivery.html">Доставка</a></li>
-          <li><a class="link contacts" href="/contacts.html">Контакты</a></li>
+          <li><a class="link" href="/index.html">Главная</a></li>
+          <li><a class="link" href="/company.html">Компания</a></li>
+          <li><a class="link" href="/catalog.html">Каталог</a></li>
+          <li><a class="link" href="/news.html">Новости</a></li>
+          <li>
+            <a class="link" href="/special-offers.html">Спецпредложения</a>
+          </li>
+          <li><a class="link" href="/delivery.html">Доставка</a></li>
+          <li><a class="link" href="/contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="container">
+      <h1 class="visually-hidden">Каталог интернет-магазина Техномарт</h1>
+
       <div class="inner-page">
         <ul class="breadcrumbs">
-          <li><a class="breadcrumbs-item catalog" href="/catalog.html">каталог</a></li>
-          <li><a class="breadcrumbs-item tool" href="/tool.html">инструмент</a></li>
-          <li><a class="breadcrumbs-item perforators" href="/catalog.html">перфораторы</a></li>
+          <li>
+            <a class="breadcrumbs-item" href="/catalog.html">каталог</a>
+          </li>
+          <li>
+            <a class="breadcrumbs-item" href="/tool.html">инструмент</a>
+          </li>
+          <li>
+            <a class="breadcrumbs-item" href="/catalog.html">перфораторы</a>
+          </li>
         </ul>
       </div>
 
@@ -211,22 +226,22 @@
         </div>
         <div class="footer-container navigation">
           <ul class="footer-navigation">
-            <li><a class="link company" href="/company.html">Компания</a></li>
-            <li><a class="link news" href="/news.html">Новости</a></li>
-            <li><a class="link catalog" href="/catalog.html">Каталог</a></li>
-            <li><a class="link delivery" href="/delivery.html">Доставка</a></li>
-            <li><a class="link contacts" href="/contacts.html">Контакты</a></li>
+            <li><a class="link" href="/company.html">Компания</a></li>
+            <li><a class="link" href="/news.html">Новости</a></li>
+            <li><a class="link" href="/catalog.html">Каталог</a></li>
+            <li><a class="link" href="/delivery.html">Доставка</a></li>
+            <li><a class="link" href="/contacts.html">Контакты</a></li>
           </ul>
           <ul class="footer-services">
             <li>
-              <a class="link materials" href="/materials.html">Материалы</a>
+              <a class="link-features" href="/materials.html">Материалы</a>
             </li>
             <li>
-              <a class="link technique" href="/technique.html">Техника</a>
+              <a class="link-features" href="/technique.html">Техника</a>
             </li>
-            <li><a class="link tool" href="/tool.html">Инструмент</a></li>
+            <li><a class="link-features" href="/tool.html">Инструмент</a></li>
             <li>
-              <a class="link special-offers" href="/special-offers.html"
+              <a class="link-features" href="/special-offers.html"
                 >Спецпредложения</a
               >
             </li>
@@ -247,7 +262,7 @@
             </ul>
           </div>
           <div class="footer-feedback">
-            <p class="footer-feedback container">
+            <p class="footer-feedback-container">
               <b class="feedback-text">Обратная связь:</b>
               <a class="feedback-button" href="mailto:mail@htmlacademy.ru"
                 >mail@htmlacademy.ru</a
