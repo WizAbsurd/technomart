@@ -15,28 +15,57 @@
       href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="main-header">
       <div class="header-container">
-        <a class="header-logo"><img src="" /></a>
-        <ul class="search-navigation">
-          <li><a class="link nav-search" href="#">Поиск:</a></li>
-          <li><a class="link nav-bookmark" href="#">Закладки: 0</a></li>
-          <li><a class="link nav-basket" href="#">Корзина: 0</a></li>
-          <li><a class="link nav-order" href="#">Оформить заказ</a></li>
-        </ul>
+        <div class="header-container-top">
+          <a class="header-logo" href="/index.html"
+            ><img
+              src="./img/logo.png"
+              width="220"
+              height="47"
+              alt="Логотип интернет-магазина Техномарт"
+          /></a>
+          <div class="nav-search">
+            <form
+              class="nav-search-form"
+              action="https://echo.htmlacademy.ru"
+              method="get"
+            >
+              <label class="nav-search-form" for="nav-search-form-q"
+                ><img src="/img/icon-search.svg" />
+                <input
+                  class="nav-search-input"
+                  id="nav-search-form-q"
+                  type="search"
+                  name="q"
+                  placeholder="Поиск:"
+              /></label>
+            </form>
+            <a class="link nav-bookmark" href="#"
+              ><img src="./img/icon-bookmark.svg" />Закладки:
+              <span class="nav-bookmark-count">0</span>
+            </a>
+            <a class="link nav-basket" href="#"
+              ><img src="./img/icon-cart.svg" />Корзина:
+              <span class="nav-basket-count">0</span>
+            </a>
+            <a class="link nav-order" href="#">Оформить заказ</a>
+          </div>
+        </div>
       </div>
       <div class="user-navigation-container">
-        <p class="user-navigation-text">
-          Интернет-магазин<br />
-          строительных материалов<br />
-          и&nbsp;инструментов для ремонта
+        <p class="site-description">
+          Интернет-магазин строительных материалов и&nbsp;инструментов для
+          ремонта
         </p>
         <ul class="user-navigation-contacts">
           <li class="user-navigation-phone">
             <a class="user-navigation-button" href="tel:+78125550555"
-              >+7 (812) 555-05-55</a
+              ><img src="/img/icon-phone.svg" />+7 (812) 555-05-55</a
             >
           </li>
           <li class="user-navigation-adress">
@@ -44,11 +73,13 @@
           </li>
         </ul>
         <ul class="user-navigation">
-          <li><a class="link nav-login" href="/login.html">Вход</a></li>
           <li>
-            <a class="link nav-registration" href="/registration"
-              >Регистрация</a
+            <a class="login-link" href="#"
+              ><img src="/img/icon-login.svg" />Вход</a
             >
+          </li>
+          <li>
+            <a class="login-registration" href="#">Регистрация</a>
           </li>
         </ul>
       </div>
@@ -90,17 +121,6 @@
             <a class="feature-button" href="/technique.html">для стройки</a>
             <a class="feature-image"></a>
           </li>
-          <li class="feature-item drill">
-            <div class="feature-container">
-              <a class="feature-button" href="/drill.html">
-                <h3 class="feature-title">ДРЕЛИ</h3>
-                <p class="feature-text">Соседям на&nbsp;радость!</p>
-              </a>
-            </div>
-            <a class="feature-button button" href="/catalog.html"
-              >открыть каталог</a
-            >
-          </li>
           <li class="feature-item special-offers">
             <h3 class="feature-title">Скидки&nbsp;50%</h3>
             <a class="feature-button" href="/special-offers.html"
@@ -114,6 +134,54 @@
             <a class="feature-image"></a>
           </li>
         </ul>
+        <div class="slider">
+          <ul class="slider-list">
+            <li class="slider-item">
+              <a class="slide-button" href="#">
+                <h3 class="slide-title">ПЕРФОРАТОРЫ</h3>
+                <p class="slide-text">Настоящие мужские игрушки</p>
+              </a>
+              <img
+                src="./img/slider-1.png"
+                width="620"
+                height="266"
+                alt="Рабочий сверлит стену перфоратором"
+              />
+              <a class="slider-button button" href="/catalog.html"
+                >открыть каталог</a
+              >
+            </li>
+            <li class="slider-item slider-item-active">
+              <a class="slide-button" href="#">
+                <h3 class="slide-title">ДРЕЛИ</h3>
+                <p class="slide-text">Соседям на&nbsp;радость!</p>
+              </a>
+              <img
+                src="./img/slider-2.png"
+                width="620"
+                height="266"
+                alt="Рабочий сверлит стену дрелью"
+              />
+              <a class="slider-button button" href="/catalog.html"
+                >открыть каталог</a
+              >
+            </li>
+          </ul>
+          <button class="slide-button slide-button-left" type="button">
+            Назад
+          </button>
+          <button class="slide-button slide-button-right" type="button">
+            Вперёд
+          </button>
+          <ul class="slider-dots">
+            <li class="dots">
+              <button class="dot" type="button">1</button>
+            </li>
+            <li class="dot">
+              <button class="dot dot-active" type="button">2</button>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="popular">
@@ -124,9 +192,14 @@
           >
         </div>
         <ul class="popular-product-list">
-          <li class="product-item nine-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/BFG-9000.png"
+                width="144"
+                height="128"
+                alt="Перфоратор BOSCH BFG 9000"
+              />
             </a>
             <h3>
               <a class="product-title" href="/catalog.html"
@@ -138,9 +211,14 @@
               <a class="product-price botton" href="#">25&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="product-item three-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/BFG-3000.png"
+                width="144"
+                height="128"
+                alt="Перфоратор BOSCH BFG 3000"
+              />
             </a>
             <h3>
               <a class="product-title" href="/catalog.html"
@@ -152,9 +230,14 @@
               <a class="product-price button" href="#">15&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="product-item six-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/BFG-6000.png"
+                width="144"
+                height="128"
+                alt="Перфоратор BOSCH BFG 6000"
+              />
             </a>
             <h3>
               <a class="product-title" href="/catalog.html"
@@ -166,9 +249,14 @@
               <a class="product-price button" href="#">25&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="product-item two-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/BFG-2000.png"
+                width="144"
+                height="128"
+                alt="Перфоратор BOSCH BFG 2000"
+              />
             </a>
             <h3>
               <a class="product-title" href="/catalog.html"
@@ -192,42 +280,82 @@
         <ul class="popular-manufacturers-list">
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/bosch.png"
+                width="126"
+                height="37"
+                alt="Логотип BOSCH"
+              />
             </a>
           </li>
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/Makita.png"
+                width="123"
+                height="40"
+                alt="Логотип makita"
+              />
             </a>
           </li>
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/DeWALT.png"
+                width="146"
+                height="44"
+                alt="Логотип dewalt"
+              />
             </a>
           </li>
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/interskol.png"
+                width="200"
+                height="88"
+                alt="Логотип interskol"
+              />
             </a>
           </li>
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/Hitachi.png"
+                width="169"
+                height="31"
+                alt="Логотип HITACHI"
+              />
             </a>
           </li>
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/LG.png"
+                width="121"
+                height="73"
+                alt="Логотип LG"
+              />
             </a>
           </li>
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/AEG.png"
+                width="151"
+                height="96"
+                alt="Логотип AEG"
+              />
             </a>
           </li>
           <li>
             <a class="manufacturer-item" href="/catalog.html">
-              <img src="" />
+              <img
+                src="./img/Metabo.png"
+                width="204"
+                height="69"
+                alt="Логотип Metabo"
+              />
             </a>
           </li>
         </ul>
@@ -238,43 +366,47 @@
           <h2 class="service-title">сервисы</h2>
           <p class="service-description">
             Хороший интернет-магазин отличается от&nbsp;плохого не&nbsp;только
-            ценами! Мы&nbsp;стараемся изо всех сил, чтобы сделать ваши покупки
+            ценами!<br />
+            Мы&nbsp;стараемся изо всех сил, чтобы сделать ваши покупки
             приятными.
           </p>
-        </div>
-        <ul class="services-list">
-          <li><a class="service-item delivery" href="#">Доставка</a></li>
-          <li><a class="service-item guarantee" href="#">Гарантия</a></li>
-          <li><a class="service-item credit" href="#">Кредит</a></li>
-        </ul>
-        <div class="service-card delivery">
-          <h2 class="service-card-title">доставка</h2>
-          <p class="service-card-description">
-            Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему
-            подъезду совершенно бесплатно! Ведь мы&nbsp;не&nbsp;плохо
-            заработаем, поднимая его на&nbsp;ваш этаж!
-          </p>
-          <a class="service-card-image"><img src="" /></a>
-        </div>
-        <div class="service-card guarantee">
-          <h2 class="service-card-title">гарантия</h2>
-          <p class="service-card-description">
-            Если купленный у&nbsp;нас товар поломается или заискрит,
-            а&nbsp;также в&nbsp;случае пожара, спровоцированного его
-            возгоранием, вы&nbsp;всегда можете быть уверены в&nbsp;нашей
-            гарантии. Мы&nbsp;обменяем сгоревший товар на&nbsp;новый. Дом
-            уж&nbsp;восстановите как-нибудь сами.
-          </p>
-          <a class="service-card-image"><img src="" /></a>
-        </div>
-        <div class="service-card credit">
-          <h2 class="service-card-title">кредит</h2>
-          <p class="service-card-description">
-            Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты
-            придут вам на&nbsp;помощь.
-          </p>
-          <a class="service-card-image"><img src="" /></a>
-          <a class="service-card button" href="#">отправить заявку</a>
+          <div class="service-menu">
+            <ul class="service-list">
+              <li><a class="service-item delivery" href="#">Доставка</a></li>
+              <li><a class="service-item guarantee" href="#">Гарантия</a></li>
+              <li><a class="service-item credit" href="#">Кредит</a></li>
+            </ul>
+            <div class="service-cards">
+              <section class="service-card delivery">
+                <h2 class="service-card-title">Доставка</h2>
+                <p class="service-card-description">
+                  Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо<br />
+                  к&nbsp;вашему подъезду совершенно бесплатно!<br />
+                  Ведь мы&nbsp;не&nbsp;плохо заработаем,<br />
+                  поднимая его на&nbsp;ваш этаж!
+                </p>
+              </section>
+              <section class="service-card guarantee">
+                <h2 class="service-card-title">Гарантия</h2>
+                <p class="service-card-description">
+                  Если купленный у&nbsp;нас товар поломается или заискрит,<br />
+                  а&nbsp;также в&nbsp;случае пожара, спровоцированного его
+                  возгоранием,<br />
+                  вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии.
+                  Мы&nbsp;обменяем сгоревший товар на&nbsp;новый.<br />
+                  Дом уж&nbsp;восстановите как-нибудь сами.
+                </p>
+              </section>
+              <section class="service-card credit">
+                <h2 class="service-card-title">Кредит</h2>
+                <p class="service-card-description">
+                  Залезть в&nbsp;долговую яму стало проще!<br />
+                  Кредитные консультанты придут вам на&nbsp;помощь.
+                </p>
+                <a class="service-card button" href="#">отправить заявку</a>
+              </section>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -292,19 +424,13 @@
           </p>
           <ul class="company-list">
             <li>
-              <a class="company-item" href="/delivery.html"
-                >Деловые линии</a
-              >
+              <a class="company-item" href="/delivery.html">Деловые линии</a>
             </li>
             <li>
-              <a class="company-item" href="/delivery.html"
-                >Автотрейдинг</a
-              >
+              <a class="company-item" href="/delivery.html">Автотрейдинг</a>
             </li>
             <li>
-              <a class="company-item" href="/delivery.html"
-                >ЖелДорЭкспедиция</a
-              >
+              <a class="company-item" href="/delivery.html">ЖелДорЭкспедиция</a>
             </li>
           </ul>
           <a class="company button" href="/company.html"
@@ -316,16 +442,22 @@
           <p class="company-description">
             Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис:
           </p>
-          <a class="contacts-map"><img src="" alt="" /></a>
-          <a class="company button" href="/contacts.html"
-            >заблудились? напишите нам!</a
-          >
+          <a class="contacts-map modal-map"
+            ><img
+              src="./img/map.png"
+              width="300"
+              height="158"
+              alt=" г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
+          /></a>
+          <button class="button modal-write-us" type="submit">
+            заблудились? напишите нам!
+          </button>
         </div>
       </section>
 
       <footer class="main-footer">
         <div class="footer-container">
-          <a class="footer-logo"><img src="" /></a>
+          <a class="footer-logo"></a>
           <a class="footer-adress" href="/contacts.html">
             г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8<br />
             +7(812)555-05-55
@@ -371,18 +503,72 @@
           <div class="footer-feedback">
             <p class="footer-feedback-container">
               <b class="feedback-text">Обратная связь:</b>
-        </div>
-              <a class="feedback-button backlight" href="mailto:mail@htmlacademy.ru"
-                >mail@htmlacademy.ru</a
-              >
-              <b class="feedback-text">Разработано -</b>
-              <a class="feedback-button backlight" href="https://htmlacademy.ru"
-                >@htmlacademy.ru и&nbsp;Димон</a
-              >
             </p>
           </div>
+          <a class="feedback-button backlight" href="mailto:mail@htmlacademy.ru"
+            >mail@htmlacademy.ru</a
+          >
+          <b class="feedback-text">Разработано -</b>
+          <a class="feedback-button backlight" href="https://htmlacademy.ru"
+            >@htmlacademy.ru и&nbsp;Димон</a
+          >
         </div>
       </footer>
+      <section class="modal modal-write-us">
+        <form
+          class="login-form"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <p>
+            <label class="visually-hidden" for="user-name">Ваше имя:</label>
+            <input
+              class="user-icon-name"
+              id="user-name"
+              type="text"
+              name="name"
+              placeholder="Представьтесь, пожалуйста"
+            />
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+            <input
+              class="user-icon-email"
+              id="user-email"
+              type="email"
+              name="e-mail"
+              placeholder="Для отправки ответа"
+            />
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-enter-text"
+              >Текст письма:</label
+            >
+            <input
+              class="user-icon-text"
+              id="user-enter-text"
+              type="text"
+              name="text"
+              placeholder="В свободной форме"
+            />
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Наш офис</h2>
+        <p>
+          <img
+            src="./img/map-full.png"
+            width="940"
+            height="446"
+            alt="Офис
+          компании по адресу г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
+          />
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </main>
   </body>
 </html>
