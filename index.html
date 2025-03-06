@@ -21,23 +21,51 @@
   <body>
     <header class="main-header">
       <div class="header-container">
-        <a class="header-logo">Техномарт</a>
-        <ul>
-          <li><a class="link nav-search" href="#">Поиск:</a></li>
-          <li><a class="link nav-bookmark" href="#">Закладки: 0</a></li>
-          <li><a class="link nav-basket" href="#">Корзина: 0</a></li>
-          <li><a class="link nav-order" href="#">Оформить заказ</a></li>
-        </ul>
+        <div class="header-container-top">
+          <a class="header-logo" href="/index.html"
+            ><img
+              src="./img/logo.png"
+              width="220"
+              height="47"
+              alt="Логотип интернет-магазина Техномарт"
+          /></a>
+          <div class="nav-search">
+            <form
+              class="nav-search-form"
+              action="https://echo.htmlacademy.ru"
+              method="get"
+            >
+              <label class="nav-search-form" for="nav-search-form-q"
+                ><img src="/img/icon-search.svg" />
+                <input
+                  class="nav-search-input"
+                  id="nav-search-form-q"
+                  type="search"
+                  name="q"
+                  placeholder="Поиск:"
+              /></label>
+            </form>
+            <a class="link nav-bookmark" href="#"
+              ><img src="./img/icon-bookmark.svg" />Закладки:
+              <span class="nav-bookmark-count">0</span>
+            </a>
+            <a class="link nav-basket" href="#"
+              ><img src="./img/icon-cart.svg" />Корзина:
+              <span class="nav-basket-count">0</span>
+            </a>
+            <a class="link nav-order" href="#">Оформить заказ</a>
+          </div>
+        </div>
       </div>
       <div class="user-navigation-container">
         <p class="site-description">
-          Интернет-магазин строительных материалов<br />
-          и&nbsp;инструментов для ремонта
+          Интернет-магазин строительных материалов и&nbsp;инструментов для
+          ремонта
         </p>
         <ul class="user-navigation-contacts">
           <li class="user-navigation-phone">
             <a class="user-navigation-button" href="tel:+78125550555"
-              >+7 (812) 555-05-55</a
+              ><img src="/img/icon-phone.svg" />+7 (812) 555-05-55</a
             >
           </li>
           <li class="user-navigation-adress">
@@ -45,7 +73,11 @@
           </li>
         </ul>
         <ul class="user-navigation">
-          <li><a class="login-link" href="#">Вход</a></li>
+          <li>
+            <a class="login-link" href="#"
+              ><img src="/img/icon-login.svg" />Вход</a
+            >
+          </li>
           <li>
             <a class="login-registration" href="#">Регистрация</a>
           </li>
@@ -104,13 +136,13 @@
         </ul>
         <div class="slider">
           <ul class="slider-list">
-            <li class="slider-item" id="slide-1">
+            <li class="slider-item">
               <a class="slide-button" href="#">
                 <h3 class="slide-title">ПЕРФОРАТОРЫ</h3>
                 <p class="slide-text">Настоящие мужские игрушки</p>
               </a>
               <img
-                src="./img/perforators.png"
+                src="./img/slider-1.png"
                 width="620"
                 height="266"
                 alt="Рабочий сверлит стену перфоратором"
@@ -119,13 +151,13 @@
                 >открыть каталог</a
               >
             </li>
-            <li class="slider-item slider-item-active" id="slide-2">
+            <li class="slider-item slider-item-active">
               <a class="slide-button" href="#">
                 <h3 class="slide-title">ДРЕЛИ</h3>
                 <p class="slide-text">Соседям на&nbsp;радость!</p>
               </a>
               <img
-                src="./img/drills.png"
+                src="./img/slider-2.png"
                 width="620"
                 height="266"
                 alt="Рабочий сверлит стену дрелью"
@@ -160,7 +192,7 @@
           >
         </div>
         <ul class="popular-product-list">
-          <li class="product-item nine-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
               <img
                 src="./img/BFG-9000.png"
@@ -179,7 +211,7 @@
               <a class="product-price botton" href="#">25&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="product-item three-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
               <img
                 src="./img/BFG-3000.png"
@@ -198,7 +230,7 @@
               <a class="product-price button" href="#">15&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="product-item six-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
               <img
                 src="./img/BFG-6000.png"
@@ -217,7 +249,7 @@
               <a class="product-price button" href="#">25&nbsp;500&nbsp;Р.</a>
             </p>
           </li>
-          <li class="product-item two-thousand">
+          <li class="product-item">
             <a class="product-image" href="/catalog.html">
               <img
                 src="./img/BFG-2000.png"
