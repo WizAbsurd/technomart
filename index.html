@@ -109,29 +109,29 @@
             <a class="feature-button" href="/materials.html"
               >на&nbsp;любой вкус</a
             >
-            <a class="feature-image"></a>
+            <a class="feature-image"><img src="/img/icon-1.svg" /></a>
           </li>
           <li class="feature-item tool">
             <h3 class="feature-title">Инструмент</h3>
             <a class="feature-button" href="/tool.html">на&nbsp;все случаи</a>
-            <a class="feature-image"></a>
+            <a class="feature-image"><img src="/img/icon-2.svg" /></a>
           </li>
           <li class="feature-item technique">
             <h3 class="feature-title">Техника</h3>
             <a class="feature-button" href="/technique.html">для стройки</a>
-            <a class="feature-image"></a>
+            <a class="feature-image"><img src="/img/icon-3.svg" /></a>
           </li>
           <li class="feature-item special-offers">
             <h3 class="feature-title">Скидки&nbsp;50%</h3>
             <a class="feature-button" href="/special-offers.html"
               >на&nbsp;350 товаров</a
             >
-            <a class="feature-image"></a>
+            <a class="feature-image"><img src="/img/icon-4.svg" /></a>
           </li>
           <li class="feature-item delivery">
             <h3 class="feature-title">Доставка</h3>
             <a class="feature-button" href="/delivery.html">БЕСПЛАТНО</a>
-            <a class="feature-image"></a>
+            <a class="feature-image"><img src="/img/icon-5.svg" /></a>
           </li>
         </ul>
         <div class="slider">
@@ -385,6 +385,7 @@
                   Ведь мы&nbsp;не&nbsp;плохо заработаем,<br />
                   поднимая его на&nbsp;ваш этаж!
                 </p>
+                <img src="/img/delivery.svg" />
               </section>
               <section class="service-card guarantee">
                 <h2 class="service-card-title">Гарантия</h2>
@@ -396,6 +397,7 @@
                   Мы&nbsp;обменяем сгоревший товар на&nbsp;новый.<br />
                   Дом уж&nbsp;восстановите как-нибудь сами.
                 </p>
+                <img src="/img/guarantee.svg" />
               </section>
               <section class="service-card credit">
                 <h2 class="service-card-title">Кредит</h2>
@@ -404,6 +406,7 @@
                   Кредитные консультанты придут вам на&nbsp;помощь.
                 </p>
                 <a class="service-card button" href="#">отправить заявку</a>
+                <img src="/img/credit.svg" />
               </section>
             </div>
           </div>
@@ -456,35 +459,45 @@
       </section>
 
       <footer class="main-footer">
-        <div class="footer-container">
-          <a class="footer-logo"></a>
-          <a class="footer-adress" href="/contacts.html">
-            г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8<br />
-            +7(812)555-05-55
-          </a>
-        </div>
-        <div class="footer-navigation-container">
-          <ul class="footer-navigation">
-            <li><a class="link" href="/company.html">Компания</a></li>
-            <li><a class="link" href="/news.html">Новости</a></li>
-            <li><a class="link" href="/catalog.html">Каталог</a></li>
-            <li><a class="link" href="/delivery.html">Доставка</a></li>
-            <li><a class="link" href="/contacts.html">Контакты</a></li>
-          </ul>
-          <ul class="footer-navigation-services">
-            <li>
-              <a class="link backlight" href="/materials.html">Материалы</a>
-            </li>
-            <li>
-              <a class="link backlight" href="/technique.html">Техника</a>
-            </li>
-            <li><a class="link backlight" href="/tool.html">Инструмент</a></li>
-            <li>
-              <a class="link backlight" href="/special-offers.html"
-                >Спецпредложения</a
-              >
-            </li>
-          </ul>
+        <div class="main-footer-container">
+          <div class="footer-container">
+            <a class="footer-logo" href="/index.html"
+              ><img
+                src="./img/footer-logo.png"
+                width="220"
+                height="68"
+                alt="Логотип интернет-магазина Техномарт"
+            /></a>
+            <a class="footer-adress" href="/contacts.html">
+              г.Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8<br />
+              +7(812)555-05-55
+            </a>
+          </div>
+          <div class="footer-navigation-container">
+            <ul class="footer-navigation">
+              <li><a class="link" href="/company.html">Компания</a></li>
+              <li><a class="link" href="/news.html">Новости</a></li>
+              <li><a class="link" href="/catalog.html">Каталог</a></li>
+              <li><a class="link" href="/delivery.html">Доставка</a></li>
+              <li><a class="link" href="/contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="footer-navigation-services">
+              <li>
+                <a class="link backlight" href="/materials.html">Материалы</a>
+              </li>
+              <li>
+                <a class="link backlight" href="/technique.html">Техника</a>
+              </li>
+              <li>
+                <a class="link backlight" href="/tool.html">Инструмент</a>
+              </li>
+              <li>
+                <a class="link backlight" href="/special-offers.html"
+                  >Спецпредложения</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="deep-footer">
           <div class="copyright">
@@ -495,9 +508,21 @@
           </div>
           <div class="footer-social">
             <ul class="social-button">
-              <li><a class="social-button vk" href="#">Вконтакте</a></li>
-              <li><a class="social-button fb" href="#">Фейсбук</a></li>
-              <li><a class="social-button inst" href="#">Инстаграм</a></li>
+              <li>
+                <a class="social-button vkontakte" href="#"
+                  ><img src="/img/icon-vk.svg"
+                /></a>
+              </li>
+              <li>
+                <a class="social-button facebook" href="#"
+                  ><img src="/img/icon-fb.svg"
+                /></a>
+              </li>
+              <li>
+                <a class="social-button instagram" href="#"
+                  ><img src="/img/icon-insta.svg"
+                /></a>
+              </li>
             </ul>
           </div>
           <div class="footer-feedback">

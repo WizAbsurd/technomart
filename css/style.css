@@ -10,6 +10,7 @@ body {
   padding: 0;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
 }
@@ -19,20 +20,14 @@ a {
 }
 
 .main-header {
-  height: 268px;
+  min-height: 268px;
   padding: 0;
   margin-bottom: 59px;
   font-size: 17px;
   line-height: 18px;
+  list-style: none;
   color: #f3f7f8;
   background-color: #f1f5f7;
-}
-
-.header-container-top {
-  min-width: 940px;
-  height: 42px;
-  padding: 0 10px;
-  margin: 0 auto;
 }
 
 .header-container {
@@ -40,20 +35,32 @@ a {
   background-color: #293449;
 }
 
+.header-container-top {
+  min-width: 940px;
+  height: 42px;
+  padding: 0;
+  margin: 0 auto;
+}
+
 .header-container,
 .header-container-top,
-.user-navigation-container {
+.user-navigation-container,
+.user-navigation,
+.site-navigation {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  list-style: none;
 }
 
 .header-container a,
-.header-container-top a {
+.header-container-top a,
+.main-navigation a {
   color: #ffffff;
 }
 
 .main-header,
+.main-container,
 .main-footer {
   font-family: "Cuprum", Arial, sans-serif;
 }
@@ -62,24 +69,16 @@ a {
   display: none;
 }
 
-.link {
-  color: #ffffff;
-}
-
 .nav-search {
-  min-width: 720px;
-  height: 42px;
 }
 
 .nav-search-form {
-  width: 270px;
-  height: 42px;
+  min-height: 42px;
 }
 
 .nav-search-input {
-  width: 220px;
-  height: 42px;
   padding: 0;
+  border: 0;
   background-color: #293449;
 }
 
@@ -87,246 +86,255 @@ a {
   color: #ffffff;
 }
 
-.nav-search-form img {
-  padding-right: 10px;
-  padding-left: 16px;
-  opacity: 30%;
-}
-
-.nav-search .link {
-  width: auto;
-  padding-top: 10px;
-  padding-bottom: 17px;
-}
-
-.nav-bookmark img {
-  padding-left: 17px;
+.nav-search img {
+  padding-left: 13px;
   padding-right: 13px;
-  opacity: 30%;
-}
-
-.nav-basket {
-  text-align: center;
-}
-
-.nav-basket img {
-  padding-right: 17px;
-  opacity: 30%;
 }
 
 .nav-order {
-  text-align: center;
   background-color: #63a63e;
 }
 
-.user-navigation-container {
-  min-width: 940px;
-  padding: 0 10px;
-  margin: 0 auto;
-  margin-top: 45px;
-  margin-bottom: 45px;
-  display: flex;
-  justify-content: center;
+.link {
+  height: 42px;
+  padding: 14px;
+  text-align: center;
 }
 
-.user-navigation-contacts {
-  padding: 0;
-  margin: 0;
-  margin-right: 70px;
-  width: 270px;
-  height: 68px;
+.user-navigation-container {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .site-description {
-  width: 196px;
-  height: 60px;
-  margin: 0;
-  margin-right: 70px;
+  width: 197px;
+  height: 71px;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
 }
 
-.user-navigation-phone {
-  width: 270px;
+.user-navigation-contacts {
+  list-style: none;
+  margin: 0;
 }
 
 .user-navigation-button {
-  width: 270px;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  padding-left: 12px;
-  padding-right: 49px;
-  height: 45px;
   border: 3px solid white;
-  font-size: 20px;
-  line-height: 21px;
-  color: #ee414e;
+  border-color: #ffffff;
+  color: #ee3643;
 }
 
-.user-navigation-button img {
-  padding-right: 40px;
-}
-
-.user-navigation-adress p {
-  padding-left: 10px;
+.user-navigation-adress {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
 .user-navigation {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  font-size: 21px;
-  line-height: 21px;
   list-style: none;
 }
 
-.user-navigation a {
-  color: #222222;
+.login-link,
+.login-registration {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .login-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 14px;
-  padding-right: 25px;
-  margin-right: 10px;
-  background-color: #ffffff;
-}
-
-.login-link img {
-  padding-right: 14px;
+  padding: 11px 25px 15px 14px;
 }
 
 .login-registration {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 25px;
-  padding-right: 27px;
-  background-color: #ffffff;
-}
-
-.main-navigation {
-  width: 940px;
-  height: 60px;
-  padding: 0;
-  margin: 0 auto;
-  background-color: #32425c;
+  padding: 14px 25px 12px 25px;
 }
 
 .site-navigation {
-  width: 960px;
+  width: 940px;
   height: 60px;
+  margin: 0 auto;
   padding: 0;
-  font-size: 17px;
-  line-height: 17px;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  background-color: #32425c;
 }
 
-.site-navigation li {
-  width: 137px;
-  height: 60px;
-  padding-top: 22px;
-  padding-bottom: 26px;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.features {
-}
-
-.features-list {
-  display: flex;
-  list-style: none;
-  color: #ffffff;
+.button {
+  padding: 14px 45px 14px 45px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fde4e6;
+  background-color: #ee3643;
 }
 
 .feature-item {
-  width: 300px;
-  height: 123px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  width: 300px;
+  height: 123px;
+  color: #ffffff;
+  background-color: #ffbf47;
 }
 
 .feature-button {
-  width: 135px;
-  height: 38px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  width: 135px;
+  height: 38px;
+  padding: 12px 24px 12px 24px;
+  margin-left: 23px;
+  background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-}
-
-.materials {
-  background-color: #ffbf47;
-  background-image: url("/img/icon-1.svg");
-  background-repeat: no-repeat;
-}
-
-.materials a {
-  background-color: #e5ac40;
 }
 
 .tool {
   background-color: #3bbce3;
-  background-image: url("/img/icon-2.svg");
-  background-repeat: no-repeat;
-}
-
-.tool a {
-  background-color: #35a9cc;
 }
 
 .technique {
   background-color: #dc91d8;
-  background-image: url("/img/icon-3.svg");
-  background-repeat: no-repeat;
-}
-
-.technique a {
-  background-color: #c682c2;
 }
 
 .special-offers {
   background-color: #8ed78f;
-  background-image: url("/img/icon-4.svg");
-  background-repeat: no-repeat;
 }
 
-.special-offers a {
-  background-color: #80c180;
+.slider-item {
+  width: 620px;
+  height: 266px;
 }
 
-.delivery {
-  background-color: #ffc047;
-  background-image: url("/img/icon-5.svg");
-  background-repeat: no-repeat;
+.slide-button {
+  background: rgba(255, 255, 255, 0.25);
 }
 
-.delivery a {
-  background-color: #e5ac40;
+.slide-button h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.slide-button p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.features-list,
+.slider-list,
+.slider-dots,
+.popular-product-list,
+.popular-manufacturers-list,
+.service-list,
+.company-list,
+.footer-navigation,
+.footer-navigation-services,
+.social-button {
+  list-style: none;
+}
+
+.popular-head {
+  width: 940px;
+  height: 89px;
+  background-color: #f9f5f0;
+}
+
+.popular-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #677283;
 }
 
 .service {
-  background-color: #f4f7f9;
+  height: 522px;
+  background-color: #f4f8f9;
 }
 
-.main-footer {
+.service-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.service-description {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.service-cards {
+  text-align: center;
+}
+
+.service-cards h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.service-cards p {
+  color: #000000;
+}
+
+.service-list {
+  display: inline;
+}
+
+.service-item {
+  width: 240px;
+  height: 61px;
+  color: #ffffff;
   background-color: #32425c;
 }
 
+.main-footer {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.footer-adress {
+  color: #f3f7f8;
+}
+
+.footer-navigation-container,
+.link {
+  color: #f3f7f8;
+}
+
+.backlight {
+  color: #ffd180;
+}
+
+.main-footer-container {
+  display: flex;
+}
+
+.footer-navigation-container {
+  display: flex;
+}
+
+.footer-navigation {
+  display: flex;
+}
+
+.footer-navigation-services {
+  display: flex;
+}
+
 .deep-footer {
+  display: flex;
   background-color: #293449;
+}
+
+.social-button {
+  display: flex;
 }
