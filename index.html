@@ -160,64 +160,38 @@
             <div class="feature-item-slider">
               <div class="slider-list">
                 <div class="slider-item">
-                  <div class="slide-info">
-                    <a class="slide-button" href="#">
+                  <div class="slide-item">
+                    <div class="slide-info" href="#">
                       <h3 class="slide-title">ПЕРФОРАТОРЫ</h3>
                       <p class="slide-text">Настоящие мужские игрушки</p>
-                    </a>
+                    </div>
+                    <div class="slide-nav">
+                      <a class="slide-button-left" href="#"></a>
+                      <a class="slide-button-right" href="#"></a>
+                    </div>
+                    <div class="slide-buttons">
+                      <a class="slider-link button" href="/catalog.html"
+                        >открыть каталог</a
+                      >
+                      <div class="slider-dots">
+                        <a class="dot dot-active" href="#"></a>
+                        <a class="dot" href="#"></a>
+                      </div>
+                    </div>
                   </div>
-                  <a class="slider-button button" href="/catalog.html"
-                    >открыть каталог</a
-                  >
-                  <button class="slide-button slide-button-left" type="button">
-                    <img
-                      src="/img/features/slider/icon-left.svg"
-                      width="22"
-                      height="40"
-                      alt="кнопка для предидущего слайда"
-                    />
-                  </button>
-                  <button class="slide-button slide-button-right" type="button">
-                    <img
-                      src="/img/features/slider/icon-right.svg"
-                      width="22"
-                      height="40"
-                      alt="кнопка для следующего слайда"
-                    />
-                  </button>
                 </div>
                 <div class="slider-item slider-item-active">
-                  <div class="slide-info">
-                    <a class="slide-button" href="#">
+                  <div class="slide-item">
+                    <div class="slide-info" href="#">
                       <h3 class="slide-title">ДРЕЛИ</h3>
                       <p class="slide-text">Соседям на&nbsp;радость!</p>
-                    </a>
-                    <a class="slider-button button" href="/catalog.html"
+                    </div>
+                    <a class="slider-link button" href="/catalog.html"
                       >открыть каталог</a
                     >
-                  </div>
-                  <button class="slide-button slide-button-left" type="button">
-                    <img
-                      src="/img/features/slider/icon-left.svg"
-                      width="22"
-                      height="40"
-                      alt="кнопка для предидущего слайда"
-                    />
-                  </button>
-                  <button class="slide-button slide-button-right" type="button">
-                    <img
-                      src="/img/features/slider/icon-right.svg"
-                      width="22"
-                      height="40"
-                      alt="кнопка для следующего слайда"
-                    />
-                  </button>
-                  <div class="slider-dots">
-                    <div class="dot">
-                      <button class="dot" type="button">1</button>
-                    </div>
-                    <div class="dot">
-                      <button class="dot dot-active" type="button">2</button>
+                    <div class="slider-dots">
+                      <div class="dot-active"></div>
+                      <div class="dot"></div>
                     </div>
                   </div>
                 </div>
@@ -466,16 +440,18 @@
             </p>
           </div>
           <div class="service-menu">
-            <ul class="service-list">
-              <li>
-                <a class="service-item service-item-active" href="#"
-                  >Доставка</a
-                >
-              </li>
-              <li><a class="service-item" href="#">Гарантия</a></li>
-              <li><a class="service-item" href="#">Кредит</a></li>
-              <li class="line"></li>
-            </ul>
+            <div class="service-action">
+              <ul class="service-list">
+                <li>
+                  <a class="service-item service-item-active" href="#"
+                    >Доставка</a
+                  >
+                </li>
+                <li><a class="service-item" href="#">Гарантия</a></li>
+                <li><a class="service-item" href="#">Кредит</a></li>
+              </ul>
+              <div class="line"></div>
+            </div>
             <section class="service-card delivery">
               <div class="service-card-container">
                 <h2 class="service-card-title">Доставка</h2>
@@ -488,37 +464,29 @@
               </div>
             </section>
             <section class="service-card guarantee">
-              <h2 class="service-card-title">Гарантия</h2>
-              <p class="service-card-description">
-                Если купленный у&nbsp;нас товар поломается или заискрит,<br />
-                а&nbsp;также в&nbsp;случае пожара, спровоцированного его
-                возгоранием,<br />
-                вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии.
-                Мы&nbsp;обменяем сгоревший товар на&nbsp;новый.<br />
-                Дом уж&nbsp;восстановите как-нибудь сами.
-              </p>
-              <img
-                src="/img/service-cards/guarantee.png"
-                width="389"
-                height="283"
-                alt="знак гарантии"
-              />
+              <div class="service-card-container">
+                <h2 class="service-card-title">Гарантия</h2>
+                <p class="service-card-description">
+                  Если купленный у&nbsp;нас товар поломается или заискрит,<br />
+                  а&nbsp;также в&nbsp;случае пожара, спровоцированного его
+                  возгоранием,<br />
+                  вы&nbsp;всегда можете быть уверены в&nbsp;нашей гарантии.
+                  Мы&nbsp;обменяем сгоревший товар на&nbsp;новый.<br />
+                  Дом уж&nbsp;восстановите как-нибудь сами.
+                </p>
+              </div>
             </section>
             <section class="service-card credit">
-              <h2 class="service-card-title">Кредит</h2>
-              <p class="service-card-description">
-                Залезть в&nbsp;долговую яму стало проще!<br />
-                Кредитные консультанты придут вам на&nbsp;помощь.
-              </p>
-              <a class="service-card-button button" href="#"
-                >отправить заявку</a
-              >
-              <img
-                src="/img/service-cards/credit.png"
-                width="465"
-                height="285"
-                alt="знак кредита"
-              />
+              <div class="service-card-container">
+                <h2 class="service-card-title">Кредит</h2>
+                <p class="service-card-description">
+                  Залезть в&nbsp;долговую яму стало проще!<br />
+                  Кредитные консультанты придут вам на&nbsp;помощь.
+                </p>
+                <a class="service-card-button button" href="#"
+                  >отправить заявку</a
+                >
+              </div>
             </section>
           </div>
         </div>
