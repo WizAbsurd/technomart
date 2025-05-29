@@ -534,14 +534,14 @@
                 заехав в&nbsp;наш офис:
               </p>
             </div>
-            <a class="contacts-map modal-map"
+            <a class="contacts-map modal-mini-map"
               ><img
                 src="/img/company-contacts/map.png"
                 width="300"
                 height="158"
                 alt=" г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
             /></a>
-            <button class="button modal-write-us" type="submit">
+            <button class="button write-us-button" type="submit">
               заблудились? напишите нам!
             </button>
           </div>
@@ -653,61 +653,71 @@
           </div>
         </div>
       </footer>
-      <section class="modal modal-write-us">
-        <form
-          class="login-form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
-          <p>
-            <label class="visually-hidden" for="user-name">Ваше имя:</label>
-            <input
-              class="user-icon-name"
-              id="user-name"
-              type="text"
-              name="name"
-              placeholder="Представьтесь, пожалуйста"
-            />
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
-            <input
-              class="user-icon-email"
-              id="user-email"
-              type="email"
-              name="e-mail"
-              placeholder="Для отправки ответа"
-            />
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-enter-text"
+    </main>
+    <section class="modal modal-write-us">
+      <div class="write-us-head"></div>
+      <form
+        class="login-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <div class="write-us-form">
+          <div class="write-us-user">
+            <div class="write-us">
+              <label class="write-us-label" for="user-name">Ваше имя:</label>
+              <input
+                class="input-form write-us-name"
+                id="enter-name"
+                type="name"
+                name="name"
+                placeholder="Представьтесь, пожалуйста"
+              />
+            </div>
+            <div class="write-us">
+              <label class="write-us-label" for="user-email">Ваш e-mail:</label>
+              <input
+                class="input-form write-us-email"
+                id="enter-email"
+                type="email"
+                name="e-mail"
+                placeholder="Для отправки ответа"
+              />
+            </div>
+          </div>
+          <div class="write-us">
+            <label class="write-us-label" for="user-enter-text"
               >Текст письма:</label
             >
             <input
-              class="user-icon-text"
-              id="user-enter-text"
+              class="input-form write-us-text"
+              id="enter-text"
               type="text"
               name="text"
               placeholder="В свободной форме"
             />
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Наш офис</h2>
-        <p>
-          <img
-            src="/img/company-contacts/map-full.png"
-            width="940"
-            height="446"
-            alt="Офис
-          компании по адресу г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
-          />
-        </p>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-    </main>
+          </div>
+        </div>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+      <div class="write-us-footer">
+        <div class="write-us-footer-button">
+          <button class="button write-us-button" type="submit">
+            Отправить
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Наш офис</h2>
+      <div class="map-head"></div>
+      <img
+        src="/img/company-contacts/map-full.png"
+        width="943"
+        height="449"
+        alt="Офис
+      компании по адресу г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
+      />
+      <button class="modal-map-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
