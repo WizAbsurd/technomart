@@ -1359,8 +1359,8 @@ a {
 }
 
 .filter-range-slider {
-  width: 220px;
-  height: 80px;
+  min-width: 220px;
+  min-height: 80px;
   background-color: #f7f3ec;
   border-radius: 3px;
 }
@@ -1374,8 +1374,8 @@ a {
 
 .range-price-container input {
   border: none;
-  width: 95px;
-  height: 38px;
+  max-width: 95px;
+  min-height: 38px;
   text-align: center;
   background-color: #f7f3ec;
   border-radius: 3px;
@@ -1409,8 +1409,8 @@ a {
   position: absolute;
   left: -35px;
   top: 0;
-  width: 23px;
-  height: 23px;
+  min-width: 23px;
+  min-height: 23px;
   background-image: url("/img/catalog/filter/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1421,8 +1421,8 @@ a {
   position: absolute;
   top: 0;
   left: -35px;
-  width: 27px;
-  height: 23px;
+  min-width: 27px;
+  min-height: 23px;
   background-image: url("/img/catalog/filter/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1433,8 +1433,8 @@ a {
   position: absolute;
   top: 0;
   left: -35px;
-  width: 25px;
-  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
   background-image: url("/img/catalog/filter/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1445,8 +1445,8 @@ a {
   position: absolute;
   top: 0;
   left: -35px;
-  width: 25px;
-  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
   background-image: url("/img/catalog/filter/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1487,6 +1487,14 @@ a {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+}
+
+.filter-button:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.filter-button:focus {
+  border: 1px solid #ee3643;
 }
 
 .catalog-column-2 {
@@ -1560,16 +1568,16 @@ a {
   background-image: url("/img/catalog/sorting/icon-up.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 11px;
-  height: 10px;
+  min-width: 11px;
+  min-height: 10px;
 }
 
 .sorting-down {
   background-image: url("/img/catalog/sorting/icon-down.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 11px;
-  height: 10px;
+  min-width: 11px;
+  min-height: 10px;
 }
 
 .sorting-up:hover {
@@ -1612,8 +1620,8 @@ a {
   position: absolute;
   top: -1px;
   right: -1px;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   text-indent: -1000px;
   overflow: hidden;
   z-index: 20;
@@ -1643,10 +1651,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 218px;
-  height: 140px;
+  min-width: 218px;
+  min-height: 190px;
   padding: 40px 0;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 10;
 }
 
@@ -1657,7 +1665,7 @@ a {
 .actions .buy,
 .actions .bookmark {
   display: block;
-  width: 129px;
+  max-width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
   padding: 7px 0;
@@ -1713,7 +1721,7 @@ a {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 134px;
+  min-width: 134px;
   margin: 0;
   padding: 0;
 }
@@ -1721,7 +1729,7 @@ a {
 .catalog-navigation-container {
   display: flex;
   justify-content: space-between;
-  width: 284px;
+  max-width: 284px;
 }
 
 .navigation-page {
@@ -1802,6 +1810,7 @@ a {
 }
 
 .modal {
+  display: none;
   position: fixed;
   color: #000000;
   background-color: #ffffff;
@@ -1817,16 +1826,16 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 620px;
-  height: 430px;
+  min-width: 620px;
+  min-height: 430px;
 }
 
 .modal-close {
   position: absolute;
   top: 16px;
   right: 9px;
-  width: 21px;
-  height: 21px;
+  min-width: 21px;
+  min-height: 21px;
   font-size: 0;
   background-color: transparent;
   border: 0;
@@ -1839,8 +1848,8 @@ a {
   position: absolute;
   top: 9px;
   left: 0;
-  width: 21px;
-  height: 3px;
+  min-width: 21px;
+  min-height: 3px;
   background-color: #ee3643;
 }
 
@@ -1878,8 +1887,8 @@ a {
 }
 
 .write-us-text {
-  width: 460px;
-  height: 114px;
+  min-width: 460px;
+  min-height: 114px;
   padding-left: 14px;
   box-sizing: border-box;
   border: 2px solid #dee3e4;
@@ -1895,8 +1904,8 @@ a {
 
 .login-form input[type="name"],
 .login-form input[type="email"] {
-  width: 220px;
-  height: 38px;
+  min-width: 220px;
+  min-height: 38px;
   padding-left: 14px;
   box-sizing: border-box;
   border: 2px solid #dee3e4;
@@ -1929,14 +1938,14 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 112px;
-  width: 620px;
+  min-height: 112px;
+  min-width: 620px;
   background-color: #f4f4f4;
 }
 
 .modal-map {
-  width: 943px;
-  height: 449px;
+  min-width: 943px;
+  min-height: 449px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1946,8 +1955,8 @@ a {
   position: absolute;
   top: 16px;
   right: 9px;
-  width: 21px;
-  height: 21px;
+  min-width: 21px;
+  min-height: 21px;
   font-size: 0;
   background-color: transparent;
   border: 0;
@@ -1960,8 +1969,8 @@ a {
   position: absolute;
   top: 9px;
   left: 0;
-  width: 21px;
-  height: 3px;
+  min-width: 21px;
+  min-height: 3px;
   background-color: #ee3643;
 }
 
@@ -1977,23 +1986,23 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 620px;
-  height: 282px;
+  min-width: 620px;
+  min-height: 282px;
 }
 
 .catalog-image {
   background-image: url("/img/catalog/basket-modal.svg");
   background-repeat: no-repeat;
-  width: 66px;
-  height: 66px;
+  min-width: 66px;
+  min-height: 66px;
 }
 
 .modal-catalog-close {
   position: absolute;
   top: 16px;
   right: 9px;
-  width: 21px;
-  height: 21px;
+  min-width: 21px;
+  min-height: 21px;
   font-size: 0;
   background-color: transparent;
   border: 0;
@@ -2006,8 +2015,8 @@ a {
   position: absolute;
   top: 9px;
   left: 0;
-  width: 21px;
-  height: 3px;
+  min-width: 21px;
+  min-height: 3px;
   background-color: #ee3643;
 }
 
@@ -2023,7 +2032,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 163px;
+  min-height: 163px;
 }
 
 .modal-catalog-container h2 {
@@ -2035,7 +2044,7 @@ a {
 }
 
 .catalog-button {
-  width: 220px;
+  min-width: 220px;
   min-height: 38px;
   border: 0;
   border-radius: 0;
@@ -2043,7 +2052,7 @@ a {
 
 .modal-catalog-button {
   background-color: #ffffff;
-  height: 38px;
+  min-height: 38px;
   padding-top: 10px;
   padding-right: 35px;
   padding-bottom: 10px;
@@ -2066,8 +2075,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 620px;
-  height: 112px;
+  min-width: 620px;
+  min-height: 112px;
   gap: 10px;
   background-color: #f1f1f1;
 }
