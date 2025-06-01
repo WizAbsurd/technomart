@@ -1093,6 +1093,7 @@ a {
 }
 
 .write-us-button {
+  min-width: 460px;
   border: 0;
 }
 
@@ -1710,18 +1711,21 @@ a {
 
 .catalog-navigation {
   display: flex;
-  list-style: none;
   justify-content: space-between;
-  width: 300px;
+  list-style: none;
+  width: 134px;
   margin: 0;
   padding: 0;
 }
 
+.catalog-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  width: 284px;
+}
+
 .navigation-page {
-  padding-top: 10px;
-  padding-right: 17px;
-  padding-bottom: 10px;
-  padding-left: 17px;
+  display: flex;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
 }
@@ -1737,6 +1741,10 @@ a {
 }
 
 .catalog-page {
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-left: 15px;
   color: #000000;
 }
 
@@ -1794,26 +1802,23 @@ a {
 }
 
 .modal {
-  display: none;
   position: fixed;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.7);
+  border-top: 7px solid #ff5357;
 }
 
 .modal-write-us {
-  top: 10%;
-  left: 26%;
-  width: 620px;
-  height: 430px;
-}
-
-.write-us-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 311px;
+  justify-content: end;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 620px;
+  height: 430px;
 }
 
 .modal-close {
@@ -1854,9 +1859,10 @@ a {
 
 .write-us-user {
   display: flex;
-  justify-content: space-between;
-  width: 460px;
-  padding-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 37px;
 }
 
 .write-us-label {
@@ -1898,20 +1904,24 @@ a {
 
 .login-form input[type="name"]:hover,
 .login-form input[type="email"]:hover,
-.login-form input[type="text"]:hover {
+.login-form textarea:hover {
   border: 2px solid #b5b5b5;
 }
 
 .login-form input[type="name"]:focus,
 .login-form input[type="email"]:focus,
-.login-form input[type="text"]:focus {
+.login-form textarea:focus {
   border: 2px solid #ee3643;
 }
 
 .login-form input[type="name"]:active,
 .login-form input[type="email"]:active,
-.login-form input[type="text"]:active {
+.login-form textarea:active {
   border: 2px solid #ee3643;
+}
+
+.login-form textarea {
+  border: 2px solid #dee3e4;
 }
 
 .write-us-footer {
@@ -1920,20 +1930,16 @@ a {
   align-items: center;
   justify-content: center;
   height: 112px;
+  width: 620px;
   background-color: #f4f4f4;
-}
-
-.write-us-footer-button {
-  display: flex;
-  flex-direction: column;
-  width: 460px;
 }
 
 .modal-map {
   width: 943px;
   height: 449px;
-  top: 10%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-map-close {
@@ -1968,17 +1974,11 @@ a {
 }
 
 .modal-catalog {
-  top: 25%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 620px;
   height: 282px;
-}
-
-.map-head,
-.write-us-head,
-.catalog-head {
-  height: 7px;
-  background-color: #ff5357;
 }
 
 .catalog-image {
@@ -1986,14 +1986,6 @@ a {
   background-repeat: no-repeat;
   width: 66px;
   height: 66px;
-}
-
-.modal-catalog-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f1f1f1;
-  height: 112px;
 }
 
 .modal-catalog-close {
@@ -2046,6 +2038,7 @@ a {
   width: 220px;
   min-height: 38px;
   border: 0;
+  border-radius: 0;
 }
 
 .modal-catalog-button {
@@ -2059,7 +2052,6 @@ a {
   line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 4px;
 }
 
 .modal-catalog-button:hover {
@@ -2071,7 +2063,11 @@ a {
 }
 
 .button-container {
-  width: 460px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 620px;
+  height: 112px;
+  gap: 10px;
+  background-color: #f1f1f1;
 }

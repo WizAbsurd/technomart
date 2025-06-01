@@ -161,7 +161,7 @@
               <div class="slider-list">
                 <div class="slider-item">
                   <div class="slide-item">
-                    <div class="slide-info" href="#">
+                    <div class="slide-info">
                       <h3 class="slide-title">ПЕРФОРАТОРЫ</h3>
                       <p class="slide-text">Настоящие мужские игрушки</p>
                     </div>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="slider-item slider-item-active">
                   <div class="slide-item">
-                    <div class="slide-info" href="#">
+                    <div class="slide-info">
                       <h3 class="slide-title">ДРЕЛИ</h3>
                       <p class="slide-text">Соседям на&nbsp;радость!</p>
                     </div>
@@ -655,61 +655,52 @@
       </footer>
     </main>
     <section class="modal modal-write-us">
-      <div class="write-us-head"></div>
+      <h2 class="visually-hidden">Напишите нам!</h2>
       <form
         class="login-form"
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <div class="write-us-form">
-          <div class="write-us-user">
-            <div class="write-us">
-              <label class="write-us-label" for="user-name">Ваше имя:</label>
-              <input
-                class="input-form write-us-name"
-                id="enter-name"
-                type="name"
-                name="name"
-                placeholder="Представьтесь, пожалуйста"
-              />
-            </div>
-            <div class="write-us">
-              <label class="write-us-label" for="user-email">Ваш e-mail:</label>
-              <input
-                class="input-form write-us-email"
-                id="enter-email"
-                type="email"
-                name="e-mail"
-                placeholder="Для отправки ответа"
-              />
-            </div>
+        <div class="write-us-user">
+          <div class="write-us">
+            <label class="write-us-label" for="users-name">Ваше имя:</label>
+            <input
+              class="input-form write-us-name"
+              id="users-name"
+              type="name"
+              name="name"
+              placeholder="Представьтесь, пожалуйста"
+            />
           </div>
           <div class="write-us">
-            <label class="write-us-label" for="user-enter-text"
-              >Текст письма:</label
-            >
+            <label class="write-us-label" for="users-email">Ваш e-mail:</label>
             <input
-              class="input-form write-us-text"
-              id="enter-text"
-              type="text"
-              name="text"
-              placeholder="В свободной форме"
+              class="input-form write-us-email"
+              id="users-email"
+              type="email"
+              name="e-mail"
+              placeholder="Для отправки ответа"
             />
+          </div>
+          <div class="write-us">
+            <label class="write-us-label" for="email-text">Текст письма:</label>
+            <textarea
+              id="email-text"
+              name="text"
+              rows="6"
+              cols="72"
+              placeholder="В&nbsp;свободной форме"
+            ></textarea>
           </div>
         </div>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
       <div class="write-us-footer">
-        <div class="write-us-footer-button">
-          <button class="button write-us-button" type="submit">
-            Отправить
-          </button>
-        </div>
+        <button class="button write-us-button" type="submit">Отправить</button>
       </div>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Наш офис</h2>
-      <div class="map-head"></div>
       <img
         src="/img/company-contacts/map-full.png"
         width="943"
