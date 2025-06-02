@@ -1826,7 +1826,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 620px;
+  max-width: 620px;
   min-height: 430px;
 }
 
@@ -1864,9 +1864,10 @@ a {
 .write-us {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
-.write-us-user {
+.login-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1878,7 +1879,6 @@ a {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
-  padding-bottom: 12px;
 }
 
 .write-us input {
@@ -1931,6 +1931,12 @@ a {
 
 .login-form textarea {
   border: 2px solid #dee3e4;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  min-width: 460px;
+  min-height: 114px;
 }
 
 .write-us-footer {
