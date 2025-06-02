@@ -1872,7 +1872,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding-bottom: 37px;
 }
 
 .write-us-label {
@@ -1937,6 +1936,7 @@ a {
   padding-left: 10px;
   min-width: 460px;
   min-height: 114px;
+  resize: none;
 }
 
 .write-us-footer {
@@ -1945,7 +1945,7 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 112px;
-  min-width: 620px;
+  width: 100%;
   background-color: #f4f4f4;
 }
 
