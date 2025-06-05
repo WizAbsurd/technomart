@@ -443,16 +443,36 @@
             <div class="service-action">
               <ul class="service-list">
                 <li>
-                  <a class="service-item service-item-active" href="#"
+                  <a
+                    class="service-item service-item--delivery service-item-active"
+                    href="#"
+                    data-item="delivery"
                     >Доставка</a
                   >
                 </li>
-                <li><a class="service-item" href="#">Гарантия</a></li>
-                <li><a class="service-item" href="#">Кредит</a></li>
+                <li>
+                  <a
+                    class="service-item service-item--guarantee"
+                    href="#"
+                    data-item="guarantee"
+                    >Гарантия</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="service-item service-item--credit"
+                    href="#"
+                    data-item="credit"
+                    >Кредит</a
+                  >
+                </li>
               </ul>
               <div class="line"></div>
             </div>
-            <section class="service-card delivery">
+            <section
+              class="service-card delivery service-card--active"
+              data-card="delivery"
+            >
               <div class="service-card-container">
                 <h2 class="service-card-title">Доставка</h2>
                 <p class="service-card-description">
@@ -463,7 +483,7 @@
                 </p>
               </div>
             </section>
-            <section class="service-card guarantee">
+            <section class="service-card guarantee" data-card="guarantee">
               <div class="service-card-container">
                 <h2 class="service-card-title">Гарантия</h2>
                 <p class="service-card-description">
@@ -476,7 +496,7 @@
                 </p>
               </div>
             </section>
-            <section class="service-card credit">
+            <section class="service-card credit" data-card="credit">
               <div class="service-card-container">
                 <h2 class="service-card-title">Кредит</h2>
                 <p class="service-card-description">
@@ -707,6 +727,67 @@
       />
       <button class="modal-close modal-map-close" type="button">Закрыть</button>
     </section>
-    <script src="/script/index-js"></script>
+    <script>
+      const SERVICE_ITEM_ACTIVE_CLASSNAME = "service-item-active";
+      const SERVICE_CARD_ACTIVE_CLASSNAME = "service-card--active";
+
+      const deliveryButton = document.querySelector(".service-item--delivery");
+      const guaranteeButton = document.querySelector(
+        ".service-item--guarantee"
+      );
+      const creditButton = document.querySelector(".service-item--credit");
+
+      const removeServiceItemActiveClass = function () {
+        document
+          .querySelectorAll(`.${SERVICE_ITEM_ACTIVE_CLASSNAME}`)
+          .forEach((element) =>
+            element.classList.remove(SERVICE_ITEM_ACTIVE_CLASSNAME)
+          );
+      };
+
+      const removeServiceCardActiveClass = function () {
+        document
+          .querySelectorAll(`.${SERVICE_CARD_ACTIVE_CLASSNAME}`)
+          .forEach((element) =>
+            element.classList.remove(SERVICE_CARD_ACTIVE_CLASSNAME)
+          );
+      };
+
+      deliveryButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        const { item } = deliveryButton.dataset;
+
+        removeServiceCardActiveClass();
+        removeServiceItemActiveClass();
+        document
+          .querySelector(`[data-card=${item}]`)
+          .classList.add(SERVICE_CARD_ACTIVE_CLASSNAME);
+        deliveryButton.classList.add(SERVICE_ITEM_ACTIVE_CLASSNAME);
+      });
+
+      guaranteeButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        const { item } = guaranteeButton.dataset;
+
+        removeServiceCardActiveClass();
+        removeServiceItemActiveClass();
+        document
+          .querySelector(`[data-card=${item}]`)
+          .classList.add(SERVICE_CARD_ACTIVE_CLASSNAME);
+        guaranteeButton.classList.add(SERVICE_ITEM_ACTIVE_CLASSNAME);
+      });
+
+      creditButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        const { item } = creditButton.dataset;
+
+        removeServiceCardActiveClass();
+        removeServiceItemActiveClass();
+        document
+          .querySelector(`[data-card=${item}]`)
+          .classList.add(SERVICE_CARD_ACTIVE_CLASSNAME);
+        creditButton.classList.add(SERVICE_ITEM_ACTIVE_CLASSNAME);
+      });
+    </script>
   </body>
 </html>

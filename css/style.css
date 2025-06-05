@@ -941,9 +941,13 @@ a {
 }
 
 .service-card {
-  display: flex;
+  display: none;
   min-width: 619px;
   min-height: 253px;
+}
+
+.service-card--active {
+  display: flex;
 }
 
 .service-card-container {
@@ -1089,11 +1093,6 @@ a {
 
 .write-us-button {
   border: 0;
-}
-
-.guarantee,
-.credit {
-  display: none;
 }
 
 .main-footer {
