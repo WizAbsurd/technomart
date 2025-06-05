@@ -1,0 +1,27 @@
+var link = document.querySelector(".write-us-button");
+var popup = document.querySelector(".modal-write-us");
+var close = document.querySelector(".modal-close");
+var minimap = document.querySelector(".contacts-map");
+var mappopup = document.querySelector(".modal-map");
+var closemap = document.querySelector(".modal-map-close");
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  console.log("работаем братья 1");
+});
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  console.log("не работаем братья 1");
+});
+minimap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mappopup.classList.add("modal-show");
+  console.log("работаем братья 2");
+});
+closemap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mappopup.classList.remove("modal-show");
+  console.log("не работаем братья 2");
+});
