@@ -161,7 +161,7 @@
               <div class="slider-list">
                 <div class="slider-item">
                   <div class="slide-item">
-                    <div class="slide-info" href="#">
+                    <div class="slide-info">
                       <h3 class="slide-title">ПЕРФОРАТОРЫ</h3>
                       <p class="slide-text">Настоящие мужские игрушки</p>
                     </div>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="slider-item slider-item-active">
                   <div class="slide-item">
-                    <div class="slide-info" href="#">
+                    <div class="slide-info">
                       <h3 class="slide-title">ДРЕЛИ</h3>
                       <p class="slide-text">Соседям на&nbsp;радость!</p>
                     </div>
@@ -443,16 +443,36 @@
             <div class="service-action">
               <ul class="service-list">
                 <li>
-                  <a class="service-item service-item-active" href="#"
+                  <a
+                    class="service-item service-item--delivery service-item-active"
+                    href="#"
+                    data-item="delivery"
                     >Доставка</a
                   >
                 </li>
-                <li><a class="service-item" href="#">Гарантия</a></li>
-                <li><a class="service-item" href="#">Кредит</a></li>
+                <li>
+                  <a
+                    class="service-item service-item--guarantee"
+                    href="#"
+                    data-item="guarantee"
+                    >Гарантия</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="service-item service-item--credit"
+                    href="#"
+                    data-item="credit"
+                    >Кредит</a
+                  >
+                </li>
               </ul>
               <div class="line"></div>
             </div>
-            <section class="service-card delivery">
+            <section
+              class="service-card delivery service-card--active"
+              data-card="delivery"
+            >
               <div class="service-card-container">
                 <h2 class="service-card-title">Доставка</h2>
                 <p class="service-card-description">
@@ -463,7 +483,7 @@
                 </p>
               </div>
             </section>
-            <section class="service-card guarantee">
+            <section class="service-card guarantee" data-card="guarantee">
               <div class="service-card-container">
                 <h2 class="service-card-title">Гарантия</h2>
                 <p class="service-card-description">
@@ -476,7 +496,7 @@
                 </p>
               </div>
             </section>
-            <section class="service-card credit">
+            <section class="service-card credit" data-card="credit">
               <div class="service-card-container">
                 <h2 class="service-card-title">Кредит</h2>
                 <p class="service-card-description">
@@ -499,14 +519,13 @@
               <h2 class="company-title">компания «техномарт»</h2>
               <p class="company-description">
                 Настоящий мужской шоппинг начинается здесь! Огромный выбор
-                товаров для ремонта&nbsp;и<br />
-                строительства не&nbsp;оставит равнодушными любителей сэкономить
-                на&nbsp;гастарбайтерах.
+                товаров для ремонта&nbsp;и строительства не&nbsp;оставит
+                равнодушными любителей сэкономить на&nbsp;гастарбайтерах.
               </p>
               <p class="company-description">
                 Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдалённые точки
-                России!<br />
-                Техномарт работает со&nbsp;многими транспортными компаниями:
+                России! Техномарт работает со&nbsp;многими транспортными
+                компаниями:
               </p>
             </div>
             <ul class="company-list list">
@@ -534,14 +553,14 @@
                 заехав в&nbsp;наш офис:
               </p>
             </div>
-            <a class="contacts-map modal-map"
+            <a class="contacts-map modal-mini-map" href="#" type="button"
               ><img
                 src="/img/company-contacts/map.png"
                 width="300"
                 height="158"
                 alt=" г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
             /></a>
-            <button class="button modal-write-us" type="submit">
+            <button class="button write-us-button" type="submit">
               заблудились? напишите нам!
             </button>
           </div>
@@ -653,61 +672,61 @@
           </div>
         </div>
       </footer>
-      <section class="modal modal-write-us">
-        <form
-          class="login-form"
-          action="https://echo.htmlacademy.ru"
-          method="post"
-        >
-          <p>
-            <label class="visually-hidden" for="user-name">Ваше имя:</label>
-            <input
-              class="user-icon-name"
-              id="user-name"
-              type="text"
-              name="name"
-              placeholder="Представьтесь, пожалуйста"
-            />
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
-            <input
-              class="user-icon-email"
-              id="user-email"
-              type="email"
-              name="e-mail"
-              placeholder="Для отправки ответа"
-            />
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-enter-text"
-              >Текст письма:</label
-            >
-            <input
-              class="user-icon-text"
-              id="user-enter-text"
-              type="text"
-              name="text"
-              placeholder="В свободной форме"
-            />
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-      <section class="modal modal-map">
-        <h2 class="visually-hidden">Наш офис</h2>
-        <p>
-          <img
-            src="/img/company-contacts/map-full.png"
-            width="940"
-            height="446"
-            alt="Офис
-          компании по адресу г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
-          />
-        </p>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
     </main>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам!</h2>
+      <form
+        class="login-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <div class="write-us">
+          <label class="write-us-label" for="users-name">Ваше имя:</label>
+          <input
+            class="input-form write-us-name"
+            id="users-name"
+            type="name"
+            name="name"
+            placeholder="Представьтесь, пожалуйста"
+          />
+        </div>
+        <div class="write-us">
+          <label class="write-us-label" for="users-email">Ваш e-mail:</label>
+          <input
+            class="input-form write-us-email"
+            id="users-email"
+            type="email"
+            name="e-mail"
+            placeholder="Для отправки ответа"
+          />
+        </div>
+        <div class="write-us">
+          <label class="write-us-label" for="email-text">Текст письма:</label>
+          <textarea
+            id="email-text"
+            name="text"
+            placeholder="В свободной форме"
+          ></textarea>
+        </div>
+        <div class="write-us-footer">
+          <button class="button write-us-button-modal" type="submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+      <button class="modal-close write-us-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Наш офис</h2>
+      <img
+        src="/img/company-contacts/map-full.png"
+        width="943"
+        height="449"
+        alt="Офис
+      компании по адресу г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8"
+      />
+      <button class="modal-close modal-map-close" type="button">Закрыть</button>
+    </section>
+    <script src="/script/index-js"></script>
   </body>
 </html>

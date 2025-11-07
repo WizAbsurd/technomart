@@ -1,0 +1,85 @@
+var link = document.querySelector(".write-us-button");
+var popup = document.querySelector(".modal-write-us");
+var close = document.querySelector(".modal-close");
+var minimap = document.querySelector(".contacts-map");
+var mappopup = document.querySelector(".modal-map");
+var closemap = document.querySelector(".modal-map-close");
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("modal-show");
+  console.log("работаем братья 1");
+});
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+  console.log("не работаем братья 1");
+});
+minimap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mappopup.classList.add("modal-show");
+  console.log("работаем братья 2");
+});
+closemap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mappopup.classList.remove("modal-show");
+  console.log("не работаем братья 2");
+});
+const SERVICE_ITEM_ACTIVE_CLASSNAME = "service-item-active";
+const SERVICE_CARD_ACTIVE_CLASSNAME = "service-card--active";
+
+const deliveryButton = document.querySelector(".service-item--delivery");
+const guaranteeButton = document.querySelector(".service-item--guarantee");
+const creditButton = document.querySelector(".service-item--credit");
+
+const removeServiceItemActiveClass = function () {
+  document
+    .querySelectorAll(`.${SERVICE_ITEM_ACTIVE_CLASSNAME}`)
+    .forEach((element) =>
+      element.classList.remove(SERVICE_ITEM_ACTIVE_CLASSNAME)
+    );
+};
+
+const removeServiceCardActiveClass = function () {
+  document
+    .querySelectorAll(`.${SERVICE_CARD_ACTIVE_CLASSNAME}`)
+    .forEach((element) =>
+      element.classList.remove(SERVICE_CARD_ACTIVE_CLASSNAME)
+    );
+};
+
+deliveryButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  const { item } = deliveryButton.dataset;
+
+  removeServiceCardActiveClass();
+  removeServiceItemActiveClass();
+  document
+    .querySelector(`[data-card=${item}]`)
+    .classList.add(SERVICE_CARD_ACTIVE_CLASSNAME);
+  deliveryButton.classList.add(SERVICE_ITEM_ACTIVE_CLASSNAME);
+});
+
+guaranteeButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  const { item } = guaranteeButton.dataset;
+
+  removeServiceCardActiveClass();
+  removeServiceItemActiveClass();
+  document
+    .querySelector(`[data-card=${item}]`)
+    .classList.add(SERVICE_CARD_ACTIVE_CLASSNAME);
+  guaranteeButton.classList.add(SERVICE_ITEM_ACTIVE_CLASSNAME);
+});
+
+creditButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  const { item } = creditButton.dataset;
+
+  removeServiceCardActiveClass();
+  removeServiceItemActiveClass();
+  document
+    .querySelector(`[data-card=${item}]`)
+    .classList.add(SERVICE_CARD_ACTIVE_CLASSNAME);
+  creditButton.classList.add(SERVICE_ITEM_ACTIVE_CLASSNAME);
+});

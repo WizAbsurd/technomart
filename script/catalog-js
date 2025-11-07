@@ -1,0 +1,67 @@
+var buylink = document.querySelectorAll(".buy");
+var pricelink = document.querySelector(".price");
+var catalogpopup = document.querySelector(".modal-catalog");
+var closecat = document.querySelector(".modal-catalog-close");
+var continuecat = document.querySelector(".modal-catalog-button");
+
+pricelink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+closecat.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.remove("modal-show");
+  console.log("не работаем братья 3");
+});
+buylink[0].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[1].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[2].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[3].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[4].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[5].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[6].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[7].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+buylink[8].addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.add("modal-show");
+  console.log("работаем братья 3");
+});
+console.log(buylink);
+continuecat.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  catalogpopup.classList.remove("modal-show");
+  console.log("не работаем братья 3");
+});
